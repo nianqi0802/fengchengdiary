@@ -1,4 +1,5 @@
 var weibodata;
+var searchresult;
 
 
 function preload(){
@@ -6,12 +7,17 @@ function preload(){
 }
 
 function setup(){
-  console.log(weibodata[0]);
+  searchresult = weibodata[0]['Weibo'];
+
 }
+
+
+
+
 
 function SearchWord(){
   var searchword = document.getElementById("searchkeyword").value;
   console.log(searchword);
-  
+  document.getElementById("searchresult").innerHTML = searchresult;
   
 }
