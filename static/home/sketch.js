@@ -2,7 +2,7 @@ var weibodata;
 
 
 function preload(){
-    weibodata = loadJSON("/home/test.json");
+    weibodata = loadJSON("/home/fengchengdiary.json");
 }
 
 function setup(){
