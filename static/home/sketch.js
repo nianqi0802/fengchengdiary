@@ -2,13 +2,14 @@ var weibopost;
 
 
 function preload(){
-    weibopost = loadJSON("test.json");
+    weibopost = loadJSON("/home/test.json");
 }
 
+function setup() {
+  createCanvas(400, 400);
+}
 
-
-function SearchWord(){
-    var keyword = document.getElementById("keyword").value;
-    console.log(keyword);
-    console.log(weibopost);
+function draw() {
+  background(220);
+  console.log(weibopost);
 }
