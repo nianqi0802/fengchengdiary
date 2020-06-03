@@ -1,15 +1,12 @@
-var weibopost;
+var weibodata;
 
 
 function preload(){
-    weibopost = loadJSON("/home/test.json");
+    weibodata = loadJSON("/home/fengchengdiary.json");
 }
 
-function setup() {
-  createCanvas(400, 400);
-}
-
-function draw() {
-  background(220);
-  console.log(weibopost);
+function SearchWord(){
+  var searchword = document.getElementById("searchkeyword").value;
+  console.log(searchword);
+  console.log(weibodata[0]['Weibo']);
 }
