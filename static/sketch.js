@@ -3,7 +3,7 @@ var searchresult;
 
 
 function preload(){
-    weibodata = loadJSON("/home/fengchengdiary.json");
+    weibodata = loadJSON("fengchengdiary.json");
 }
 
 function setup(){
@@ -11,6 +11,9 @@ function setup(){
 
 }
 
+function draw(){
+  
+}
 
 
 
